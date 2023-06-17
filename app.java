@@ -1,38 +1,38 @@
 package com.company.model;
 
 /**
- * Reprezentuje salę konferencyjną.
+ * Reprezentuje produkt.
  */
-public class Room {
+public class Product {
     private String name;
-    private int capacity;
+    private double price;
 
     /**
-     * Tworzy nową salę konferencyjną.
+     * Tworzy nowy produkt.
      *
-     * @param name     nazwa sali
-     * @param capacity pojemność sali
+     * @param name  nazwa produktu
+     * @param price cena produktu
      */
-    public Room(String name, int capacity) {
+    public Product(String name, double price) {
         this.name = name;
-        this.capacity = capacity;
+        this.price = price;
     }
 
     /**
-     * Zwraca nazwę sali.
+     * Zwraca nazwę produktu.
      *
-     * @return nazwa sali
+     * @return nazwa produktu
      */
     public String getName() {
         return name;
     }
 
     /**
-     * Zwraca pojemność sali.
+     * Zwraca cenę produktu.
      *
-     * @return pojemność sali
+     * @return cena produktu
      */
-    public int getCapacity() {
-        return capacity;
+    public double getPrice() {
+        return price;
     }
 }
