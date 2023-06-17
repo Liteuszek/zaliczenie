@@ -1,5 +1,19 @@
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+package com.company.model;
+
+public class Room {
+    private String name;
+    private int capacity;
+
+    public Room(String name, int capacity) {
+        this.name = name;
+        this.capacity = capacity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getCapacity() {
+        return capacity;
     }
 }
